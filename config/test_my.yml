@@ -1,0 +1,23 @@
+exp:
+    name: train_my_modelv
+    device: 1
+
+dataset: 
+    num_split: 1
+    root: '/mnt/sda/fk/data/T23DQA/'
+    ann: '/mnt/sda/fk/data/T23DQA/anno.txt'
+    sample_num: 12
+    size: 224
+
+train:
+    epochs: 50
+    batch_size: 4
+
+model:
+    backbone: 'cuda'
+    vl_model: 'clip'
+    sd_model: 'swin-s'
+    td_model: 'swin-t'
+
+optimizer:
+    lr: 0.0001

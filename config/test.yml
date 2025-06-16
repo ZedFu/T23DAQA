@@ -1,0 +1,20 @@
+exp:
+    name: test_parsers
+    device: 1
+
+dataset: 
+    num_split: 10
+    root: '/home/fk/data/T23DQA/'
+    ann: '/home/fk/data/T23DQA/anno.txt'
+    sample_num: 12
+    size: 224
+
+train:
+    epochs: 100
+    batch_size: 4
+
+model:
+    backbone: 'swin3d'
+
+optimizer:
+    lr: 0.0001
